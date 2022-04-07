@@ -1,7 +1,8 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: echo 'init'
-    command: pip install eth-brownie; npm install -g ganache
+  - name: Install brownie and ganache
+    init: pip install eth-brownie; npm install -g ganache
+    command: brownie compile
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
